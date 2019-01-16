@@ -1,0 +1,148 @@
+/* ENCODE SANS */
+
+@font-face {
+    font-family: "Encode Sans";
+    src: url("user-assets/EncodeSans-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Encode Sans";
+    src: url("user-assets/EncodeSans-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Encode Sans";
+    src: url("user-assets/EncodeSans-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Encode Sans";
+    src: url("user-assets/EncodeSans-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+/* ROBOTO */
+
+@font-face {
+    font-family: "Roboto";
+    src: url("user-assets/Roboto-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("user-assets/Roboto-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("user-assets/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("user-assets/Roboto-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("user-assets/Roboto-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("user-assets/Roboto-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("user-assets/Roboto-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("user-assets/Roboto-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+html {
+
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+    /* FONTS */
+    /* --default-font-family: "Open Sans", Arial, Helvetica, sans-serif; */
+    --default-font-family: "Roboto", Tahoma, Helvetica, sans-serif;
+    --secondary-font-family: "Encode Sans", Tahoma, Helvetica, sans-serif;
+    --default-font-color: #303233;
+    --default-font-color-light: #7b7e80;
+    --default-placeholder-color: #818687;
+
+    /* BACKGROUND */
+    --default-bg-color: white;
+    --default-bg-color-light: white;
+    --default-bg-color-dark: #f2f2f2;
+    --input-disabled-color: #EBEBE4;
+
+    /* BORDERS */
+    --default-border-color: #d9d9d9;
+    --default-border-radius: 10px;
+
+    /* COLOURS */
+    --primary-accent-color: #c253d9; /* CH2 purple */
+    --secondary-accent-color: #ff504d; /* CH2 red */
+    --midpoint-accent-color: #d667ad; /* actual midpoint: E15293, other options: d667ad, de6b9f */
+    --theme-light-grey: #eaecec; /* CH2 light grey */
+    --primary-color: #0984ce;
+    --primary-color-font: white;
+    --success-color: #7AAD52;
+
+    --incognito-color: #212325;
+
+    /* BUTTONS */
+    --app-primary-button-color: var(--midpoint-accent-color);
+    --app-primary-button-font-color: var(--primary-color-font);
+
+    --app-danger-button-color: #f04747;
+    --app-danger-button-font-color: white;
+
+    /* OTHER */
+    --header-border-color: #cb70de; /* light variation of primary accent colour */
+    --tab-row-border-color: #ff6865; /* light variation of secondary accent colour */
+    --row-background-color: #f6dff0; /* pale variation of primary accent color */
+}
+
+body {
+    font-family: var(--default-font-family);
+    font-size: .9em;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+div#body {
+
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: translateX(0vw);
+}
